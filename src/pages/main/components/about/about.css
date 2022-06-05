@@ -1,0 +1,185 @@
+#i{
+    z-index: 3;
+    overflow: hidden;
+    height: 85vh;
+    font-family: 'Roboto Slab', serif;
+    display: flex;
+    animation: about-load 2s;
+    width: 100vw;
+    border-bottom: 5px solid;
+    border-image:   linear-gradient(to right, #03f0fc 25%, #fff200 25%, #fff200 50%, #ff0088 50%, #ff0088 75%, #46f736 75%) 5;
+}
+
+#container {
+    position: relative
+}
+
+#tsparticles {
+  position: absolute;
+  left: calc(0);
+  top: calc(0);
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 85vh;
+  z-index: 1;
+}
+
+@keyframes about-load {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+.i-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    height: 85vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.i-right {
+    flex: 1;
+}
+
+.i-left-container {
+    padding: 5%;
+    height: 70%;
+    flex-direction: column;
+    width: 100%;
+}
+
+.i-name {
+    font-size: 5.9vw;
+    width: 100%;
+    color: inherit;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    opacity: 0;
+    animation: 
+        typing 3.5s steps(30, end) ,
+        blink-caret .5s step-end infinite;
+    float: left;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0; opacity: 1;}
+    to { width: 100%; opacity: 1}
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+
+.i-title {
+    height: 50px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.i-title-container {
+    height: 100%;
+    animation: move 10s infinite alternate;
+    animation-delay: 2s;
+}
+
+@keyframes move {
+    25% {
+        transform: translateY(-50px);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    75% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(-200px);
+    }
+}
+
+.i-title-item {
+    height: 50px;
+    font-size: 30px;
+    color: lightblue;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.i-img {
+    width: 70%;
+    height: 100%;
+    float: right;
+    border-left: 5px solid;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+
+.background {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+@media screen and (max-device-width: 480px) {
+    #i {
+        flex-direction: column;
+    }
+    .i-left {
+        padding: .5rem;
+    }
+    .i-left-container {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        padding: 0px;
+    }
+    .i-name {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+        width: 100%;
+    }
+    .i-title {
+        width: 100%;
+    }
+    .i-title-item {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .i-right {
+        padding: .5rem;
+    }
+    .right-container {
+        height: 100%;
+    }
+    .i-img {
+        margin-left: 25%;
+        margin-right: 25%;
+        width: 50%;
+    }
+    .i-img img {
+        object-fit: contain;
+        overflow: hidden;
+    }
+}

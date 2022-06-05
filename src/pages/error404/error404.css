@@ -1,0 +1,26 @@
+.e {
+    padding: 5%;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Dosis', sans-serif;
+}
+
+.e h1 {
+    font-size: 500%;
+}
+
+.e h3 {
+    font-size: 200%;
+    margin: 20px 0px;
+}
+
+.e a {
+    font-size: 150%;
+    color: inherit;
+    text-decoration: none;
+}
+
+.e a:hover {
+    text-decoration: underline;
+}
+

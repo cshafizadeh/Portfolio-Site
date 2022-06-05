@@ -1,0 +1,251 @@
+#projectsMain {
+    height: 100vh;
+    width: 100vw;
+    cursor: pointer;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+    border-image: linear-gradient(to right, #03f0fc 25%, #fff200 25%, #fff200 50%, #ff0088 50%, #ff0088 75%, #46f736 75%) 5;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col-3 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.topRow {
+    height: 33.3%;
+}
+
+.midRow {
+    height: 33.3%;
+}
+
+.botRow {
+    height: 33.3%;
+}
+
+.topRowLeftCol {
+    background-color: #F24C4C;
+    border-bottom: 5px solid white;
+    padding: 1vw;
+    text-align: center;
+}
+
+.topRowLeftCol h1 {
+    font-size: 5vw;
+}
+
+.topRowLeftCol h1 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+.bartBox {
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #00FFAB;
+}
+
+.bartBox img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.midRowRightColComponent {
+    height: 100%;
+}
+
+.topRowMidColComponent {
+    height: 100%;
+}
+
+.bartAnimation {
+    width: 100%;
+    height: 100%;
+    padding: 5%;
+    background-color: #FEFEFE;
+    color: black;
+    z-index: 3;
+    border-left: 5px solid #179bda;
+}
+
+.topRowLeftCol {
+    height: 100%;
+}
+
+.topRowMidCol {
+    height: 200%;
+    overflow: hidden;
+    border-right: 5px solid #FFE61B;
+    background-color: #36AE7C;
+}
+
+.topRowMidColAnimate {
+    height: 100%;
+}
+
+.topRowMidColTopHalf {
+    height: 50%;
+    padding: 5%;
+    border-right: 5px solid #FFBED8;
+}
+
+.topRowMidColBotHalf {
+    height: 50%;
+    padding: 5%;
+    border-bottom: 5px solid #FFBED8;
+    border-right: 5px solid #FFBED8;
+}
+
+.topRowRightCol {
+    height: 100%;
+    background-color: #36AE7C;
+    border-bottom: 5px solid #143F6B;
+}
+
+.topRowRightColComponent {
+    height: 100%;
+}
+
+.topRowRightColAnimate {
+    background-color: #911F27;
+    height: 100%;
+    padding: 5%;
+}
+
+.topRowRightColInitialState {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    padding: 5%;
+}
+
+.topRowRightColInitialState:hover {
+    color: transparent;
+}
+
+.midRowLeftCol {
+    border-bottom: 5px solid #79DAE8;
+    background-color: #36AE7C;
+    height: 100%;
+    width: 100%;
+}
+
+.midRowLeftColComponent {
+    height: 100%;
+    width: 100%;
+}
+
+.midRowLeftColInitialState {
+    width: 100%;
+    height: 100%;
+    padding: 10%;
+    top: 0;
+}
+
+.midRowLeftColInitialState:hover {
+    color: transparent;
+}
+
+.midRowLeftColAnimate {
+    width: 100%;
+    height: 100%;
+    background-color: #FF8D29;
+    position: relative;
+    border-radius: 50%;
+}
+
+.midRowLeftMidColComponent {
+    background-color: #6B778D;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.midRowLeftMidColInitialState {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    padding: 5%;
+}
+
+.midRowLeftMidColAnimate {
+    width: 100%;
+    position: absolute;
+    background-color: #6B778D;
+    border-bottom: 5px solid #FF0000;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.scanning {
+    position: absolute;
+    font-family: 'Courier Prime', monospace;
+    z-index: 3;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+
+.midRowLeftMidColComponent:hover .scanning {
+    opacity: 1;
+}
+
+.midRowRightMidCol {
+    width: 100%;
+    height: 100%;
+    background-color: #40DFEF;
+    border-right: 5px solid #FF8D29;
+    text-align: center;
+}
+
+.midRowRightMidColComponent {
+    width: 100%;
+    height: 100%;
+}
+
+.midRowRightMidColAnimate {
+    width: 100%;
+    height: 100%;
+    background-color: #00FFAB;
+    overflow: hidden;
+}
+
+.midRowRightMidCol p {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    margin: 0% 25%;
+    font-family: 'Courier Prime', monospace;
+    font-size: 1.5rem;
+}
+
+.botRowLeftCol {
+    background-color: #187498;
+    border-right: 5px solid #F24A72;
+}
+
+.botRowMidCol {
+    background-color: #40DFEF;
+}
+
+.botRowRightCol {
+    background-color: #F24C4C;
+    border-top: 5px solid #F2F2F2;
+}
+
+.canvas {
+    height: 50%;
+}

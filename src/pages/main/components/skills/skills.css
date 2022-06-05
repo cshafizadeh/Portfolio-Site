@@ -1,0 +1,158 @@
+.s {
+    height: 90vh;
+    display: flex;
+    border-bottom: 5px solid;
+    animation: skills-load 2s;
+    overflow-x: hidden;
+    overflow: hidden;
+    border-top: 5px solid;
+}
+
+@keyframes skills-load {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+}
+
+.s-left {
+    flex: 1;
+    max-width: 30vw;
+}
+
+.s-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-size: 200%;
+    width: 70vw;
+}
+
+.s-right-wrapper {
+    padding: 2.5%;
+}
+
+.s-paragraph {
+    padding: 10px;
+    font-size: 90%;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.title h2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4rem;
+}
+
+.languages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.language-logo {
+    width: 11vw;
+    height: 11vw;
+    text-align: center;
+    margin: .5vw;
+}
+
+.logo-container {
+    width: 8vw;
+    height: 8vw;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 8vw;
+    max-height: 8vw;
+}
+
+.click {
+    font-size: 2vw;
+    opacity: .5;
+}
+
+.language-name {
+    font-size: 1.5rem;
+}
+
+#s-left-wrapper {
+    width: 100%;
+    height: 100%;
+    font-size: 500%;
+    font-family: 'Bebas Neue', cursive;
+    border-right: 5px solid;
+    cursor: pointer;
+}
+
+@keyframes skills-scroll {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+#s-container {
+    height: 16.5%;
+    overflow: hidden;
+    color: inherit;
+}
+
+.cs p {
+    animation: skills-scroll 5s linear infinite;
+}
+
+.js p {
+    animation: skills-scroll 10s linear infinite;
+}
+
+.cpp p {
+    animation: skills-scroll 6s linear infinite;
+}
+
+.react p {
+    animation: skills-scroll 6s linear infinite;
+}
+
+.html p {
+    animation: skills-scroll 7s linear infinite;
+}
+
+.css p {
+    animation: skills-scroll 9s linear infinite;
+}
+
+@media screen and (max-device-width: 480px) {
+    .s {
+        flex-direction: column;
+        padding: 2vw;
+        min-height: 85vh;
+    }
+    .s-left {
+        display: none;
+    }
+    .s-right {
+        flex: none;
+        width: 96vw;
+        height: 100%;
+        align-items: unset;
+    }
+    .s-right-wrapper{
+        padding: 0;
+    }
+    .s-paragraph {
+        padding: 0;
+    }
+    .language-logo {
+        width: 22vw;
+        height: 22vw;
+    }
+    .logo-container {
+        width: 12vw;
+        height: 12vw;
+    }
+}

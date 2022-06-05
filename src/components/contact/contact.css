@@ -1,0 +1,102 @@
+.c {
+    height: 85vh;
+    font-family: 'Ubuntu', sans-serif;
+    overflow: hidden;
+    border-bottom: 5px solid;
+    border-image:   linear-gradient(to right, #03f0fc 25%, #fff200 25%, #fff200 50%, #ff0088 50%, #ff0088 75%, #46f736 75%) 5;
+}
+
+.c-container {
+    width: 90%;
+    padding: 5%;
+    display: flex;
+}
+
+.c-left {
+    flex: 1;
+}
+
+.c-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.c-title {
+    font-size: 50px;
+    width: 80%;
+}
+
+.c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+.c-description {
+    font-size: 25px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    width: 50%;
+    height: 50px;
+    border: none;
+    background-color: inherit;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+textarea {
+    margin: 20px 0px;
+    width: 100%;
+    border: 1px solid;
+    outline: none;
+    background-color: inherit;
+}
+
+.c button {
+    width: 25%;
+    height: 15%;
+    border: none;
+    border-radius: 10px;
+    font-size: 110%;
+}
+
+.c button:hover {
+    cursor: pointer;
+}
+
+.c button:active {
+    width: 23%;
+    height: 14%;
+}
+
+.sent-message {
+    width: 25%;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media screen and (max-device-width: 480px) {
+    .c {
+        height: 100vh;
+    }
+    .c-container{
+        flex-direction: column;
+        padding: 10px;
+    }
+
+}
