@@ -10,12 +10,7 @@ const TopRowRightComponent = () => {
           opacity: TRRCisHovering ? 1 : 0,
         },
     });
-
-    function projectPage() {
-        window.location = '/';
-        //`/${link}`;
-    }
-
+    
     return (
             <div className='topRowRightColComponent'
                 onClick={ () => window.location = '/'}

@@ -28,11 +28,6 @@ const MidRowLeftComponent = () => {
         },
     });
 
-    function projectPage() {
-        window.location = '/';
-        //`/${link}`;
-    }
-
     return (
             <div className='midRowLeftColComponent'
                 onClick={ () => window.location = '/'}

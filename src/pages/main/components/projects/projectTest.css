@@ -100,6 +100,11 @@
     height: 50%;
     padding: 5%;
     border-right: 5px solid #FFBED8;
+    display: flex;
+}
+
+.topRowMidColTopHalf img {
+    width: 100%;
 }
 
 .topRowMidColBotHalf {

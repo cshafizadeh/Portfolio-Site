@@ -12,37 +12,32 @@ const MidRowLeftMidComponent = () => {
         },
     });
 
-    function projectPage() {
-        window.location = '/';
-        //`/${link}`;
-    }
-
     return (
-            <div className='midRowLeftMidColComponent'
-                onClick={ () => window.location = '/'}
-                onMouseOver={() => setMRLMCIsHovering(true)}
-                onMouseLeave={() => setMRLMCIsHovering(false)}>
-                 <div className='midRowLeftMidColInitialState' style={{ position: "absolute" }}>
-                    <p> Whats here?!</p>
-                    <p> Whats here?!</p>
-                    <p> Whats here?!</p>
-                    <p> Whats here?!</p>
-                    <p> Whats here?!</p>
-                    <p> Whats here?!</p>
-                </div>
-                <animated.div style={midRowLeftMidColStyles} className='midRowLeftMidColAnimate'>
-                    <div className='midRowLeftMidColInner' style={{ padding: '5%' }}>
-                        <p>Peekaboo!</p>
-                        <p>Peekaboo!</p>
-                        <p>Peekaboo!</p>
-                        <p>Peekaboo!</p>
-                        <p>Peekaboo!</p>
-                    </div>
-                </animated.div> 
-                <div className='scanning' >
-                    Scanning...
-                </div>
+        <div className='midRowLeftMidColComponent'
+            onClick={ () => window.location = '/'}
+            onMouseOver={() => setMRLMCIsHovering(true)}
+            onMouseLeave={() => setMRLMCIsHovering(false)}>
+                <div className='midRowLeftMidColInitialState' style={{ position: "absolute" }}>
+                <p> Whats here?!</p>
+                <p> Whats here?!</p>
+                <p> Whats here?!</p>
+                <p> Whats here?!</p>
+                <p> Whats here?!</p>
+                <p> Whats here?!</p>
             </div>
+            <animated.div style={midRowLeftMidColStyles} className='midRowLeftMidColAnimate'>
+                <div className='midRowLeftMidColInner' style={{ padding: '5%' }}>
+                    <p>Peekaboo!</p>
+                    <p>Peekaboo!</p>
+                    <p>Peekaboo!</p>
+                    <p>Peekaboo!</p>
+                    <p>Peekaboo!</p>
+                </div>
+            </animated.div> 
+            <div className='scanning' >
+                Scanning...
+            </div>
+        </div>
     )
 }
 
