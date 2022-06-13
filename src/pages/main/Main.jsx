@@ -18,7 +18,13 @@ const Main = () => {
           color: lightMode ? "black" : "white",
           border: lightMode ? "black" : "white",
       }}>
+        <Header />
+        <Toggle />
+        <About />
+        <Skills />
         <ProjectsTest />
+        <Contact />
+        <Footer />
       </div>
   );
 };

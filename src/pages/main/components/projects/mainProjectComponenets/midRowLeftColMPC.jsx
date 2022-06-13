@@ -30,7 +30,6 @@ const MidRowLeftComponent = () => {
 
     return (
             <div className='midRowLeftColComponent'
-                onClick={ () => window.location = '/'}
                 onMouseOver={() => setMRLCIsHovering(true)}
                 onMouseLeave={() => setMRLCIsHovering(false)}>
                 <div className='midRowLeftColInitialState' style={{ position: "absolute" }}>

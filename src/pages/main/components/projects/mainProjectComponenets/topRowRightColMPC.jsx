@@ -13,11 +13,15 @@ const TopRowRightComponent = () => {
     
     return (
             <div className='topRowRightColComponent'
-                onClick={ () => window.location = '/'}
                 onMouseOver={() => setTRRCIsHovering(true)}
                 onMouseLeave={() => setTRRCIsHovering(false)}>
                 <div className='topRowRightColInitialState' style={{ position: "absolute" }}>
-                    <p> Whats here?!</p>
+                    <p>Test</p>
+                    <p>Test</p>
+                    <p>Test</p>
+                    <p>Test</p>
+                    <p>Test</p>
+                    <p>Test</p>
                 </div>
                 <animated.div style={topRowRightColStyles} className='topRowRightColAnimate'>
                     <p>Peekaboo!</p>

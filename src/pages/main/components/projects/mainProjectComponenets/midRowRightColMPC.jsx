@@ -14,7 +14,6 @@ const MidRowRightComponent = () => {
 
   return (
             <div className='midRowRightColComponent'
-                onClick={ () => window.location = '/bart'}
                 onMouseOver={() => setTRLCIsHovering(true)}
                 onMouseLeave={() => setTRLCIsHovering(false)}>
                     <div className='bartBox' style={{ position: "absolute" }}>
@@ -23,7 +22,8 @@ const MidRowRightComponent = () => {
                     <animated.div style={topRowLeftColStyles} className='bartAnimation'>
                     <h3>Bart API</h3>
                     <p>Gets info on train arrivals and destinations</p>
-                    <p>Click To See More →</p>
+                    <p onClick={ () => window.location = '/bart'}>Click To See More →</p>
+                    <a href='https://github.com/cshafizadeh/ApiProjects/tree/master/src/Components/bartAPI'>GitHub Code</a>
                     </animated.div>
             </div>
   )
