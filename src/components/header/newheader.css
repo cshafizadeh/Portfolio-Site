@@ -1,0 +1,17 @@
+#h {
+    border-bottom: 3px solid white;
+    overflow: hidden;
+    font-family: 'Ubuntu', sans-serif;
+    position: sticky;
+    top: 0;
+    padding-top: 10px;
+    z-index: 10;
+    background-color: inherit;
+}
+
+.header-bottom {
+    width: 100vw;
+    height: 10px;
+    border-bottom: 5px solid;
+    border-image: linear-gradient(to right, #931621 25%, var(--color-highlight-2) 25%, var(--color-highlight-2) 50%, var(--color-highlight-3) 50%) 5;
+}

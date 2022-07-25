@@ -1,6 +1,7 @@
 import '../projectTest.css';
 import React, { useState } from 'react';
-import { animated, useSpring } from '@react-spring/web'
+import { animated, useSpring } from '@react-spring/web';
+import donationLogo from '../../../../../components/img/donationLogoWhite.png';
 
 const MidRowLeftComponent = () => {
     const [MRLCisHovering, setMRLCIsHovering] = useState(false);
@@ -24,7 +25,7 @@ const MidRowLeftComponent = () => {
           marginRight: MRLCisHovering ? '0%' : '50%',
           borderRadius: MRLCisHovering ? '0%' : '50%',
           opacity: MRLCisHovering ? 1 : 0,
-          border: MRLCisHovering ? '0px solid #FF5151' : '10px solid #FF5151'
+          border: MRLCisHovering ? '0px solid #139267' : '10px solid #139267'
         },
     });
 
@@ -32,12 +33,17 @@ const MidRowLeftComponent = () => {
             <div className='midRowLeftColComponent'
                 onMouseOver={() => setMRLCIsHovering(true)}
                 onMouseLeave={() => setMRLCIsHovering(false)}>
-                <div className='midRowLeftColInitialState' style={{ position: "absolute" }}>
-                    <p> Whats here?!</p>
+                <div className='midRowLeftColInitialState' style={{ position: "absolute", display: 'flex' }}>
+                    <img style={{height: '100%'}} src={donationLogo} alt='donationLogo' />
+                    <h3 style={{padding: '3%'}}>GSCE</h3>
                 </div>
-                    <animated.div style={midRowLeftColStyles} className='midRowLeftColAnimate'>
-                            <p>Peekaboo!</p>
-                    </animated.div> 
+                <animated.div style={midRowLeftColStyles} className='midRowLeftColAnimate'>
+                        <p>Built the website for the GSCE, a non-profit trying to stop climate change</p>
+                        <p>Site uses EmailJs to handle a contact and grant form, sending the form data to GSCE via email</p>
+                        <p>PayPal API implemented to allow for users to donate to the endowment</p>
+                        <p onClick={ () => window.location = '/projects'}>Click To See More →</p>
+                        <a href='https://gscendowment.org' alt='gscendowment'>Visit →</a>
+                </animated.div> 
             </div>
     )
 }

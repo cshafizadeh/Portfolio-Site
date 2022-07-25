@@ -3,7 +3,7 @@
     font-family: 'Ubuntu', sans-serif;
     overflow: hidden;
     border-bottom: 5px solid;
-    border-image:   linear-gradient(to right, #03f0fc 25%, #fff200 25%, #fff200 50%, #ff0088 50%, #ff0088 75%, #46f736 75%) 5;
+    border-image: linear-gradient(to right, #931621 25%, var(--color-highlight-2) 25%, var(--color-highlight-2) 50%, var(--color-highlight-3) 50%) 5;
 }
 
 .c-container {

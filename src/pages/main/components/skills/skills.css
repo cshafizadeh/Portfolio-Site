@@ -1,5 +1,5 @@
 .s {
-    height: 90vh;
+    min-height: 90vh;
     display: flex;
     border-bottom: 5px solid;
     animation: skills-load 2s;

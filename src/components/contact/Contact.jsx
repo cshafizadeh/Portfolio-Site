@@ -1,10 +1,11 @@
 import './contact.css';
 import Gmail from '../../components/img/Gmail_icon.png'
 import Phone from '../../components/img/phone_logo.png'
+import GitHub from '../../components/img/githubLogo.png'
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import {AwesomeButton, AwesomeButtonProgress, AwesomeButtonSocial, } from 'react-awesome-button';
-import 'react-awesome-button/dist/themes/theme-eric.css';
+import 'react-awesome-button/dist/themes/theme-red.css';
 
 const Contact = () => {
     const formRef = useRef();

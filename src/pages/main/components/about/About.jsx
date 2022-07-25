@@ -11,7 +11,7 @@ const About = () => {
             backgroundPosition: 'center',
             backgroundSize: 'cover'
         }}>
-           <Particlesjs/>
+            <Particlesjs/>
             <div className='i-left'>
                     <div className="i-left-container">
                         <h2>Hello my name is</h2>
@@ -25,7 +25,7 @@ const About = () => {
                             </div>
                         </div>
                         <div className="i-desc">
-                            I am a 2nd-year student at the College of Engineering at Oregon State University currently achieving my 
+                            I am a 3rd-year student at the College of Engineering at Oregon State University currently achieving my 
                             Bachelors of Science in computer science and a minor in business. My passion is creating unique stylish user experiences that 
                             achieve business objectives while scaling and delighting users. I am on a non-stop mission to find an 
                             internship in the San Fransisco Bay Area this summer.
@@ -37,3 +37,5 @@ const About = () => {
 }
 
 export default About
+
+//           <Particlesjs/>

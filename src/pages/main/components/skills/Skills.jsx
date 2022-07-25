@@ -24,7 +24,7 @@ const Skills = () => {
     return (
         <div className="s">
             <div className="s-left">
-                <div id="s-left-wrapper" style={{backgroundColor: lightMode ? "lightblue" : "#343F56"}}>
+                <div id="s-left-wrapper" style={{backgroundColor: lightMode ? "lightblue" : "#474747"}}>
                     <div className='click'>Click Us! ↓</div>
                     <div id="s-container" onClick={randomize}>
                         <div className="cpp">

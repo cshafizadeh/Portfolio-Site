@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Header from '../../components/header/Header';
+import NewHeader from '../../components/header/newHeader';
 import About from './components/about/About';
 import Skills from './components/skills/Skills';
 import Contact from '../../components/contact/Contact';
@@ -14,11 +14,11 @@ const Main = () => {
   const lightMode = theme.state.lightMode;
   return (
       <div style={{
-          backgroundColor: lightMode ? "white" : "#222831",
+          backgroundColor: lightMode ? "white" : "var(--color-primary)",
           color: lightMode ? "black" : "white",
           border: lightMode ? "black" : "white",
       }}>
-        <Header />
+        <NewHeader />
         <Toggle />
         <About />
         <Skills />
@@ -30,14 +30,3 @@ const Main = () => {
 };
 
 export default Main;
-
-/*
-<Header />
-<Toggle />
-<About />
-<Skills />
-<ProjectsTest />
-<Contact />
-<Footer />
-
-*/

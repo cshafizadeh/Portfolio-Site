@@ -1,6 +1,11 @@
 #footer {
-    color: white;
-    background-color: #36454F;
+    color: inherit;
+    background-color: inherit;
     text-align: center;
-    max-height: 1.5rem;
+}
+
+.footer-img {
+    width: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
 }

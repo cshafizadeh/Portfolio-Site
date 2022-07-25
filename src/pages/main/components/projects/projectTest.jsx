@@ -1,7 +1,7 @@
 import './projectTest.css';
 import React from 'react';
 import {AwesomeButton} from 'react-awesome-button';
-import 'react-awesome-button/dist/themes/theme-eric.css';
+import 'react-awesome-button/dist/themes/theme-red.css';
 import TopRowMidComponent from './mainProjectComponenets/topRowMidColMPC';
 import TopRowRightComponent from './mainProjectComponenets/topRowRightColMPC';
 import MidRowLeftComponent from './mainProjectComponenets/midRowLeftColMPC';
@@ -25,7 +25,7 @@ const ProjectsTest = () => {
             <div className='topRowMidCol col-md-6'> 
                 <TopRowMidComponent/>
             </div>
-            <div className='topRowRightCol col-md-3 bg-warning'>
+            <div className='topRowRightCol col-md-3'>
                 <TopRowRightComponent />
             </div>
         </div>
@@ -45,7 +45,7 @@ const ProjectsTest = () => {
             </div> 
         </div>
         <div className='botRow row'>
-            <div className='botRowLeftCol col-md-3 bg-warning'>
+            <div className='botRowLeftCol col-md-3'>
                 <p>Test</p>
                 <p>Test</p>
                 <p>Test</p>

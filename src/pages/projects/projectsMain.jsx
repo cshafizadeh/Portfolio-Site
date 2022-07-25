@@ -1,24 +1,48 @@
 import React, { useContext } from 'react';
-import Header from '../../components/header/Header';
+import NewHeader from '../../components/header/newHeader';
 import Toggle from '../../components/toggle/Toggle';
 import Footer from '../../components/footer/footer';
 import { projectMainData } from './projectMainData';
 import { ThemeContext } from '../../context';
 import './projectMain.css';
-import ArrowAnimation from '../../components/Animations/figmaAnimation';
 
 const ProjectsMain = () => {
   const theme = useContext(ThemeContext);
   const lightMode = theme.state.lightMode;
+
+  function checkValid(dataLink) {
+    if(dataLink !== ''){
+      return (
+        <a href={dataLink}>Visit! →</a>
+      )
+    }
+  }
+
+  function dataEmbed(dataEmbed) {
+    if(dataEmbed !== ''){
+      return (
+        <div>
+          <iframe
+            src={dataEmbed}
+            frameBorder="1"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+            title="video"
+          />{" "}
+        </div>
+      );
+    }
+  }
+
   return (
       <div
         style={{
-          backgroundColor: lightMode ? "white" : "#222831",
+          backgroundColor: lightMode ? "white" : "var(--color-primary)",
           color: lightMode ? "black" : "white",
           border: lightMode ? "black" : "white",
         }}
       >
-      <Header />
+      <NewHeader />
       <Toggle />
       <main className='projectMain'>
             {projectMainData.map((data, key) => {
@@ -39,6 +63,7 @@ const ProjectsMain = () => {
                               <li key={key}>{description}</li>
                             )
                           })}
+                          {dataEmbed(data.embed)}
                           <div className='languages row'>
                             {projectMainData[key].languages.map((languages, key) => {
                               return (
@@ -50,8 +75,9 @@ const ProjectsMain = () => {
                               )
                             })}
                           </div>
-                          <a href={data.link}>Visit!</a>
+                          {checkValid(data.link)}
                         </div>
+                        <a href={data.code}>GitHub Code →</a>
                       </div>
                     </div>
                 );

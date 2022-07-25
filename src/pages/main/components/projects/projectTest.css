@@ -2,10 +2,11 @@
     height: 100vh;
     width: 100vw;
     cursor: pointer;
+    color: #ffffff;
     overflow: hidden;
     border-bottom: 5px solid;
     border-top: 5px solid;
-    border-image: linear-gradient(to right, #03f0fc 25%, #fff200 25%, #fff200 50%, #ff0088 50%, #ff0088 75%, #46f736 75%) 5;
+    border-image: linear-gradient(to right, #931621 25%, var(--color-highlight-2) 25%, var(--color-highlight-2) 50%, var(--color-highlight-3) 50%) 5;
 }
 
 @media screen and (max-device-width: 580px) {
@@ -22,7 +23,7 @@
         height: 30vh;
     }
     .topRowRightCol {
-        min-height: 30vh;
+        min-height: 40vh;
     }
     .bartBox img {
         height: 100%;
@@ -30,6 +31,9 @@
     .midRowLeftColAnimate {
         height: 40vh !important;
         margin: 0 !important;
+    }
+    .topRowRightColAnimate p{
+        font-size: 4vw;
     }
 }
 
@@ -61,7 +65,7 @@
 }
 
 .topRowLeftCol {
-    background-color: #F24C4C;
+    background-color: #931621;
     border-bottom: 5px solid white;
     padding: 1vw;
     text-align: center;
@@ -75,7 +79,7 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 5px solid #00FFAB;
+    border-bottom: 5px solid var(--color-highlight-2);
 }
 
 .bartBox img {
@@ -110,8 +114,8 @@
 .topRowMidCol {
     height: 200%;
     overflow: hidden;
-    border-right: 5px solid #FFE61B;
-    background-color: #36AE7C;
+    border-left: 5px solid var(--color-highlight-2);
+    background-color: var(--color-highlight-3);
 }
 
 .topRowMidColAnimate {
@@ -121,7 +125,6 @@
 .topRowMidColTopHalf {
     height: 50%;
     padding: 5%;
-    border-right: 5px solid #FFBED8;
     display: flex;
 }
 
@@ -132,11 +135,11 @@
 .topRowMidColBotHalf {
     height: 50%;
     padding: 5%;
-    border-bottom: 5px solid #FFBED8;
-    border-right: 5px solid #FFBED8;
 }
 
 .topRowRightCol {
+    height: 100%;
+    background-color: var(--color-secondary);
     border-bottom: 5px solid #143F6B;
 }
 
@@ -147,23 +150,26 @@
 .topRowRightColAnimate {
     background-color: #911F27;
     height: 100%;
-    padding: 5%;
+    width: 100%;
+    padding: 3%;
+    position: absolute;
+    top: 0;
+    font-size: 1vw;
+}
+
+.topRowRightColAnimate p {
+    margin: 1%;
 }
 
 .topRowRightColInitialState {
     height: 100%;
     width: 100%;
-    top: 0;
     padding: 5%;
-}
-
-.topRowRightColInitialState:hover {
-    color: transparent;
 }
 
 .midRowLeftCol {
     border-bottom: 5px solid #79DAE8;
-    background-color: #36AE7C;
+    background-color: var(--color-highlight-2);
     height: 100%;
     width: 100%;
 }
@@ -180,21 +186,19 @@
     top: 0;
 }
 
-.midRowLeftColInitialState:hover {
-    color: transparent;
-}
-
 .midRowLeftColAnimate {
     width: 100%;
     height: 100%;
-    background-color: #FF8D29;
+    background-color: var(--color-highlight-3);
     position: relative;
     border-radius: 50%;
+    padding: 2%;
+    font-size: 90%;
 }
 
 .midRowLeftMidColComponent {
     font-family: 'Courier Prime', monospace;
-    background-color: #6B778D;
+    background-color: #292929;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -210,8 +214,8 @@
 .midRowLeftMidColAnimate {
     width: 100%;
     position: absolute;
-    background-color: #6B778D;
-    border-bottom: 5px solid #FF0000;
+    background-color: #292929;
+    border-bottom: 5px solid #931621;
     overflow: hidden;
     z-index: 2;
 }
@@ -231,8 +235,8 @@
 .midRowRightMidCol {
     width: 100%;
     height: 100%;
-    background-color: #40DFEF;
-    border-right: 5px solid #FF8D29;
+    background-color: var(--color-highlight-2);
+    border-right: 5px solid #292929;
     text-align: center;
 }
 
@@ -258,18 +262,18 @@
 }
 
 .botRowLeftCol {
-    background-color: #187498;
-    border-right: 5px solid #F24A72;
+    background-color: var(--color-secondary);
+    border-right: 5px solid #931621;
     height: 100%;
 }
 
 .botRowMidCol {
-    background-color: #40DFEF;
+    background-color: var(--color-highlight-3);
     height: 100%;
 }
 
 .botRowRightCol {
-    background-color: #F24C4C;
+    background-color: #931621;
     border-top: 5px solid #F2F2F2;
 }
 

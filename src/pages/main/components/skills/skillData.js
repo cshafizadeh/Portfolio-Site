@@ -8,6 +8,7 @@ import bootstrapLogo from '../../../../components/img/bootstrapLogo.png';
 import nodejsLogo from '../../../../components/img/nodejsLogo.png';
 import htmlLogo from '../../../../components/img/htmlLogo.png';
 import cssLogo from '../../../../components/img/cssLogo.png';
+import pythonLogo from '../../../../components/img/pythonLogo.png';
 
 export const skillData = [
     {   
@@ -50,5 +51,9 @@ export const skillData = [
         name: 'Bootstrap',
         logo: bootstrapLogo,
     },
+    {
+        name: 'Python',
+        logo: pythonLogo,
+    }
     
 ]
